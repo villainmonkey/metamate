@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     description: "The next era of identity begins now. Create your digital mind.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
