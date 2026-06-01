@@ -5,10 +5,10 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get("host") || "";
 
-  // Check if it's the kokoromate subdomain (e.g., kokoromate.metamate.social or kokoromate.localhost:3000)
-  const isKokoroMateSubdomain = hostname.startsWith("kokoromate.");
+  // Check if it's the kokoro subdomain (e.g., kokoro.metamate.social or kokoro.localhost:3000)
+  const isKokoroSubdomain = hostname.startsWith("kokoro.");
 
-  if (isKokoroMateSubdomain) {
+  if (isKokoroSubdomain) {
     // Prevent duplicate paths: Redirect subdomain/kokoromate to subdomain/
     if (url.pathname === "/kokoromate") {
       url.pathname = "/";
