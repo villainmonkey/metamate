@@ -1043,6 +1043,11 @@ export default function KokoroMatePage() {
               <p className="text-xs sm:text-sm font-medium text-gray-500 leading-relaxed">
                 MetaMate 旗下のAI人格陪伴システム。
               </p>
+              <div>
+                <a href="https://orynth.dev/projects/kokoromate" target="_blank" rel="noopener">
+                  <img src="https://orynth.dev/api/badge/kokoromate?theme=light&style=default" alt="Featured on Orynth" width="260" height="80" />
+                </a>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-x-16 gap-y-8">
